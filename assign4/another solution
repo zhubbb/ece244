@@ -1,0 +1,16 @@
+//       Node* Nptr=listhead;                                         // exactly a for loop!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//        while(Nptr!=NULL){
+//            if(Nptr!=myNode) {//what is passing out
+//                Resistor* found=Nptr->findResistor(Rptr->getName());
+//                if(found!=NULL){//found it
+//                    Vright=Vright+(Nptr->getOrsetvoltage()/Rptr->getResistance());
+//                    if(Vleft==0)
+//                        Vleft=Rptr->getResistance();
+//                    else
+//                        Vleft=1/(1/Vleft+1/Rptr->getResistance());
+//                }
+//            }
+//            Nptr=Nptr->getNext();
+//        }
+//        Rptr=Rptr->getNext();
+//    }

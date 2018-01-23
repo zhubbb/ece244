@@ -1,0 +1,57 @@
+TEST SUITE FOR LAB 4
+
+I tried really hard to match outputs and I passed the four exercises so I am pretty sure my outputs are correctly formatted, but they may not be! I am sorry in advance if they aren't, I did my best! Good Luck!
+
+
+I have 5 different tests:
+Test 1: the inputs from the lab handout + some other inputs which I thought could cause problems
+Test 2-5: the tests that the submit script uses, line for line (thought it would be easy to have 		  them all in one place!)
+
+Compile your program with the -g flag so that valgrind will tell you what line the memory error is on, it will help a lot!
+
+Extract your files into the same directory you expect your executable to be!
+
+
+
+TO COMPILE 
+(from your directory with your project files):
+
+	g++ -c -g Main.cpp
+	g++ -c -g Resistor.cpp
+	g++ -c -g Node.cpp
+	g++ -c -g ResistorList.cpp
+	g++ -c -g NodeList.cpp
+	g++ -c -g Rparser.cpp
+
+(Alternativly: g++ -c -g *.cpp //just make sure you don't have extra .cpp files in your directory)
+
+	g++ -o rnet.exe Main.o Resistor.o Node.o ResistorList.o NodeList.o Rparser.o
+
+(Alternativly: g++ -o rnet.exe *.o //make sure you didn't have any extra .cpp files that would 					    make more .o files in yoru directory!)
+
+
+
+TO RUN TEST
+(from the directory with your executable [should be same directory as compilation])
+rnet.exe = the name of your executable, I chose rnet.exe again!
+
+
+TEST1
+	valgrind --leak-check=full ./rnet < testInput1.txt > myOutput1.txt
+	diff myOutput1.txt tannerOutput1.txt
+
+TEST2
+	valgrind --leak-check=full ./rnet < testInput2.txt > myOutput2.txt
+	diff myOutput1.txt tannerOutput2.txt
+
+TEST3
+	valgrind --leak-check=full ./rnet < testInput3.txt > myOutput3.txt
+	diff myOutput1.txt tannerOutput3.txt
+
+TEST4
+	valgrind --leak-check=full ./rnet < testInput4.txt > myOutput4.txt
+	diff myOutput1.txt tannerOutput4.txt
+
+TEST5
+	valgrind --leak-check=full ./rnet < testInput5.txt > myOutput5.txt
+	diff myOutput5.txt tannerOutput5.txt

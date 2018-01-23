@@ -1,0 +1,207 @@
+
+#############################################################
+#############################################################
+Running Testcase 1
+#############################################################
+#############################################################
+
+Running the following input on your program:
+=============================================================
+insert www.google.com 283983 active
+insert www.yahoo.com 191333 active
+insert www.eecg.utoronto.ca 179333 inactive
+insert www.altera.com 3299 active
+insert www.flickr.com 52478 inactive
+insert www.flickr.com 404 active
+printall
+-------------------------------------------------------------
+
+Your program produced the following output:
+=============================================================
+>Success
+>Success
+>Success
+>Success
+>Success
+>Error: entry already exists
+>www.altera.com : 3299 : active
+www.eecg.utoronto.ca : 179333 : inactive
+www.flickr.com : 52478 : inactive
+www.google.com : 283983 : active
+www.yahoo.com : 191333 : active
+>
+-------------------------------------------------------------
+
+<<<<<<<<< Comparing output to solution >>>>>>>>>>>>
+
+Running valgrind to check for memory leaks
+
+############### Testcase 1 Results ##########################
+Functionality: PASS - Output matches solution
+Valgrind:      PASS - No memory leaks detected
+
+#############################################################
+#############################################################
+Running Testcase 2
+#############################################################
+#############################################################
+
+Running the following input on your program:
+=============================================================
+insert www.google.com 283983 active
+insert www.yahoo.com 191333 active
+insert www.eecg.utoronto.ca 179333 inactive
+insert www.altera.com 283299 active
+insert www.flickr.com 152478 inactive
+find www.yahoo.ca
+find www.yahoo.com
+updatestatus www.google.ca inactive
+updatestatus www.google.com inactive
+printall
+printprobes www.flickr.ca
+printprobes www.flickr.com
+countactive
+-------------------------------------------------------------
+
+Your program produced the following output:
+=============================================================
+>Success
+>Success
+>Success
+>Success
+>Success
+>Error: entry does not exist
+>www.yahoo.com : 191333 : active
+>Error: entry does not exist
+>Success
+>www.altera.com : 283299 : active
+www.eecg.utoronto.ca : 179333 : inactive
+www.flickr.com : 152478 : inactive
+www.google.com : 283983 : inactive
+www.yahoo.com : 191333 : active
+>Error: entry does not exist
+>3
+>2
+>
+-------------------------------------------------------------
+
+<<<<<<<<< Comparing output to solution >>>>>>>>>>>>
+
+Running valgrind to check for memory leaks
+
+############### Testcase 2 Results ##########################
+Functionality: PASS - Output matches solution
+Valgrind:      PASS - No memory leaks detected
+
+#############################################################
+#############################################################
+Running Testcase 3
+#############################################################
+#############################################################
+
+Running the following input on your program:
+=============================================================
+insert www.google.com 283983 active
+insert www.yahoo.com 191333 active
+insert www.eecg.utoronto.ca 179333 inactive
+insert www.altera.com 283299 active
+insert www.flickr.com 152478 inactive
+removeall
+insert www.google.com 283983 active
+printprobes www.google.com
+printall
+-------------------------------------------------------------
+
+Your program produced the following output:
+=============================================================
+>Success
+>Success
+>Success
+>Success
+>Success
+>Success
+>Success
+>1
+>www.google.com : 283983 : active
+>
+-------------------------------------------------------------
+
+<<<<<<<<< Comparing output to solution >>>>>>>>>>>>
+
+Running valgrind to check for memory leaks
+
+############### Testcase 3 Results ##########################
+Functionality: PASS - Output matches solution
+Valgrind:      PASS - No memory leaks detected
+
+#############################################################
+#############################################################
+Running Testcase 4
+#############################################################
+#############################################################
+
+Running the following input on your program:
+=============================================================
+insert www.doodle.com 283983 active
+insert www.bing.com 191333 active
+insert www.amazon.com 179333 inactive
+insert www.cnn.com 283299 active
+printprobes www.bing.com
+printprobes www.amazon.com
+printprobes www.cnn.com
+printall
+remove www.bing.com
+printprobes www.amazon.com
+printprobes www.cnn.com
+remove www.amazon.com
+printprobes www.cnn.com
+printall
+remove www.cnn.com
+printall
+-------------------------------------------------------------
+
+Your program produced the following output:
+=============================================================
+>Success
+>Success
+>Success
+>Success
+>2
+>3
+>3
+>www.amazon.com : 179333 : inactive
+www.bing.com : 191333 : active
+www.cnn.com : 283299 : active
+www.doodle.com : 283983 : active
+>Success
+>2
+>3
+>Success
+>2
+>www.cnn.com : 283299 : active
+www.doodle.com : 283983 : active
+>Success
+>www.doodle.com : 283983 : active
+>
+-------------------------------------------------------------
+
+<<<<<<<<< Comparing output to solution >>>>>>>>>>>>
+
+Running valgrind to check for memory leaks
+
+############### Testcase 4 Results ##########################
+Functionality: PASS - Output matches solution
+Valgrind:      PASS - No memory leaks detected
+
+
+#############################################################
+################# Summary for 4 test(s) #####################
+#############################################################
+
+Functionality: PASS: All tests passed
+Valgrind:      PASS: No memory leaks detected
+
+#############################################################
+#############################################################
+#############################################################
+

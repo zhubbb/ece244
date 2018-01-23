@@ -1,0 +1,59 @@
+Submitting assignment 6 from p55.ecf.utoronto.ca
+Checking for the expected files in the current directory
+Shape.h Shape.cpp ShapeArray.h ShapeArray.cpp Triangle.h Triangle.cpp easygl.h easygl_constants.h graphics.h easygl.cpp graphics.cpp Main.cpp Rectangle.h Rectangle.cpp Circle.h Circle.cpp Polygon.cpp Polygon.h
+Attempting to build your code.  Make output follows:
+==================================================================
+g++ -Wall -lX11 Circle.cpp easygl.cpp Main.cpp Rectangle.cpp Shape.cpp ShapeArray.cpp Triangle.cpp graphics.cpp Polygon.cpp -o lab6
+------------------------------------------------------------------
+The build appears to have been successful
+
+Running exercise on the produced executable 'lab6'
+############### Testcase 1 Results ##########################
+Functionality: FAIL - Output did not match solution
+Valgrind:      PASS - No memory leaks detected
+############### Testcase 2 Results ##########################
+Functionality: FAIL - Output did not match solution
+Valgrind:      PASS - No memory leaks detected
+############### Testcase 3 Results ##########################
+Functionality: FAIL - Output did not match solution
+Valgrind:      PASS - No memory leaks detected
+############### Testcase 4 Results ##########################
+Functionality: FAIL - Output did not match solution
+Valgrind:      PASS - No memory leaks detected
+################# Summary for 4 test(s) #####################
+Functionality: FAIL: 4 test(s) failed!
+Valgrind:      PASS: No memory leaks detected
+
+lab6 failed exercise
+run /u/course/ece244i/public/exercise for a full report
+This assignment did not pass exercise, do want to submit anyways? (y/n): y
+
+Submitting files
+
+Verifying submission
+submitece244f -l 6
+total 260
+-rw-r----- 1 submit ece244f   1352 Nov 27 00:52 Circle.cpp
+-rw-r----- 1 submit ece244f    621 Nov 27 00:52 Circle.h
+-rw-r----- 1 submit ece244f   1112 Nov 27 00:52 easygl_constants.h
+-rw-r----- 1 submit ece244f   5395 Nov 27 00:52 easygl.cpp
+-rw-r----- 1 submit ece244f   6782 Nov 27 00:52 easygl.h
+-rw-r----- 1 submit ece244f 157901 Nov 27 00:52 graphics.cpp
+-rw-r----- 1 submit ece244f   8688 Nov 27 00:52 graphics.h
+-rw-r----- 1 submit ece244f   7008 Nov 27 00:52 Main.cpp
+-rw-r----- 1 submit ece244f   4836 Nov 27 00:52 Polygon.cpp
+-rw-r----- 1 submit ece244f    771 Nov 27 00:52 Polygon.h
+-rw-r----- 1 submit ece244f   1504 Nov 27 00:52 Rectangle.cpp
+-rw-r----- 1 submit ece244f    694 Nov 27 00:52 Rectangle.h
+-rw-r----- 1 submit ece244f   7770 Nov 27 00:52 ShapeArray.cpp
+-rw-r----- 1 submit ece244f   2330 Nov 27 00:52 ShapeArray.h
+-rw-r----- 1 submit ece244f   1609 Nov 27 00:52 Shape.cpp
+-rw-r----- 1 submit ece244f   3621 Nov 27 00:52 Shape.h
+-rw-r----- 1 submit ece244f   1699 Nov 27 00:51 submit_log.1127004453
+-rw-r----- 1 submit ece244f   5055 Nov 27 00:52 Triangle.cpp
+-rw-r----- 1 submit ece244f   1227 Nov 27 00:52 Triangle.h
+
+All filesizes match. All timestamps match submission time.
+
+Submission was successful
+

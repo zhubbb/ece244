@@ -1,0 +1,5 @@
+To run this you should use the following commands (after compiling your program with the -g flag)
+
+valgrind --leak-check=full ./rnet < input.txt > output.txt
+
+//where rnet is teh name of my executable

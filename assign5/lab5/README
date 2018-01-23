@@ -1,0 +1,24 @@
+Tanner Young-Schultz Test Suite Lab 5
+
+Version 1 of tester for lab 5 (passed exercise script)
+	Please let me know about errors if found!
+
+Compling (assuming only neccessary .cpp, .h and .o files are in working directory):
+
+	g++ -c -g *.cpp		//-g flag is for line numbers in valgrind
+
+	g++ *.o -o IP		//I named my IP, doesn't matter
+
+Execution (replace the # sign in the command with the appropriate test file number (1-5)):
+
+	valgrind --leak-check=full ./IP < input#.txt > yourOutput#.txt
+
+Comparison (replace the # sign in the command with the appropriate test file number (1-5)):
+
+	*Note if you are having trouble with spacing (which should not be a huge issue in this 		lab) use the -b (ignores white space length) or -w flag (ignore all white space). 
+	man diff, for more info on flags.
+
+
+	diff yourOutput#.txt outputReference#.txt
+
+Enjoy :-) !

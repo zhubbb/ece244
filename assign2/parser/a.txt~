@@ -1,0 +1,26 @@
+insertR all 
+insertR asd 2 2 2 2 
+insertR as d d f eq
+insertR SFD 1 1 2 3 4
+insertR sdf 12 3 4a
+
+modifyR all
+
+printR all
+deleteR all
+
+modifyR all 1 1 1
+modifyR -1 -1
+modifyR r0 12
+
+deleteR asdf 
+deleteR sdf;;
+deleteR a123 
+
+printNode 1
+printNode all
+printNode a1
+printNode 12as
+printNode 12 a 
+printNode 12 12
+printNode 2 2

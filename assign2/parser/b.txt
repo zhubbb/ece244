@@ -1,0 +1,27 @@
+> Error: resistor name cannot be the key word "all"
+> Error: both terminals of resistor connect to node 2
+> Error: invalid argument
+> Error: too many arguments
+> Error: invalid argument
+> Error: invalid command
+> Error: resistor name cannot be the key word "all"
+> Error: invalid command
+> Print: all resistors
+> Deleted: all resistors
+> Error: invalid command
+> Error: too many arguments
+> Error: negative resistance
+> Modified: resistor r0 to 12 Ohms 
+> Error: invalid command
+> Deleted: resistor asdf
+> Deleted: resistor sdf;;
+> Deleted: resistor a123
+> Error: invalid command
+> Print: node 1
+> Print: all nodes
+> Error: invalid argument
+> Error: invalid argument
+> Error: too many arguments
+> Error: too many arguments
+> Error: too many arguments
+>

@@ -1,0 +1,56 @@
+Submitting assignment 4 from p66.ecf.utoronto.ca
+Checking for the expected files in the current directory
+Main.cpp Rparser.cpp Rparser.h ResistorList.h ResistorList.cpp Resistor.h Resistor.cpp Node.h Node.cpp NodeList.h NodeList.cpp
+Attempting to build your code.  Make output follows:
+==================================================================
+g++ -g -c Main.cpp
+g++ -g -c Rparser.cpp
+g++ -g -c Resistor.cpp
+g++ -g -c Node.cpp
+g++ -g -c ResistorList.cpp
+g++ -g -c NodeList.cpp
+g++ -g Main.o Rparser.o Resistor.o Node.o ResistorList.o NodeList.o -o rnet
+------------------------------------------------------------------
+The build appears to have been successful
+
+Running exercise on the produced executable 'rnet'
+############### Testcase 1 Results ##########################
+Functionality: PASS - Output matches solution
+Valgrind:      PASS - No memory leaks detected
+############### Testcase 2 Results ##########################
+Functionality: PASS - Output matches solution
+Valgrind:      PASS - No memory leaks detected
+############### Testcase 3 Results ##########################
+Functionality: PASS - Output matches solution
+Valgrind:      PASS - No memory leaks detected
+############### Testcase 4 Results ##########################
+Functionality: PASS - Output matches solution
+Valgrind:      PASS - No memory leaks detected
+################# Summary for 4 test(s) #####################
+Functionality: PASS: All tests passed
+Valgrind:      PASS: No memory leaks detected
+
+The required files passed exercise
+
+Submitting files
+
+Verifying submission
+submitece244f -l 4
+total 60
+-rw-r----- 1 submit ece244f   996 Nov  6 19:20 Main.cpp
+-rw-r----- 1 submit ece244f  3651 Nov  6 19:20 Node.cpp
+-rw-r----- 1 submit ece244f  1107 Nov  6 19:20 Node.h
+-rw-r----- 1 submit ece244f  7336 Nov  6 19:20 NodeList.cpp
+-rw-r----- 1 submit ece244f   755 Nov  6 19:20 NodeList.h
+-rw-r----- 1 submit ece244f  1688 Nov  6 19:20 Resistor.cpp
+-rw-r----- 1 submit ece244f  1092 Nov  6 19:20 Resistor.h
+-rw-r----- 1 submit ece244f  2233 Nov  6 19:20 ResistorList.cpp
+-rw-r----- 1 submit ece244f   536 Nov  6 19:20 ResistorList.h
+-rw-r----- 1 submit ece244f 11148 Nov  6 19:20 Rparser.cpp
+-rw-r----- 1 submit ece244f   894 Nov  6 19:20 Rparser.h
+-rw-r----- 1 submit ece244f   595 Nov  6 19:09 submit_log.1106190950
+
+All filesizes match. All timestamps match submission time.
+
+Submission was successful
+

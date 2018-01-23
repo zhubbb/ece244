@@ -1,0 +1,46 @@
+Graph Implementation
+Tanner Young-Schultz
+
+For the purpose of studying for our exam and preperation for next semester
+
+Note the implementation of the Graph. It is fully dynamic… the vertices are in linked list form and each vertex has a linked list of Edge objects that point to a vertex in the linked list of vertices.
+
+I tried to be consistent with the structure of our labs, so I made Edge, Vertex and Graph objects and made as many members private as I could!
+
+Couple Recourses:
+
+	Visualizing the graph data structure (Adjacency list/matrix):
+
+		https://www.cs.bu.edu/teaching/c/graph/linked/
+
+	youtube video explaining algorithm (best I could find, and what I used):
+	
+		https://www.youtube.com/watch?v=0nVYi3o161A
+
+	C++ guide (with pseudo code) describing algorithm:
+	
+		http://www.cprogramming.com/tutorial/computersciencetheory/dijkstra.html
+
+
+
+
+Compile from a directory with just these files in it:
+	
+	g++ -g *.cpp -o Graph
+
+If you want to play around with inputs:
+	
+	./Graph
+
+If you want to see my example inputs:
+	
+	./Graph < input1.txt
+		or
+	./Graph < input2.txt
+
+
+
+
+Have not run valgrind on it, I am pretty sure I delete all dynamic memory but I am not 100% sure... don't yell at me if there is leakage.
+
+Let me know of any BUGS please :)!

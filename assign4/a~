@@ -1,0 +1,47 @@
+insertR A 1 1 2
+insertR b 2 1 2
+insertR c 2 7 1
+insertR b c 7 2
+deleteR A
+deleteR b
+insertR A 1 1 2
+deleteR A
+deleteR c
+printNode all
+delete b
+
+
+
+insertR a 100  5 6
+insertR B 100 5 2
+insertR c 100 2 3
+insertR d 200 5 3
+insertR e 120 3 4 
+setV 6 1
+setV 4 -0.6
+
+
+insertR a 1 1 2
+setV 1 1
+solve
+
+
+insertR R1 100 6 5
+
+insertR R2 100 5 2
+
+insertR R3 200 5 3
+
+insertR R4 150 2 3
+
+insertR R5 120 3 4
+setV 6 1
+setV 4 -0.6
+solve
+
+
+cd ./ece244/assign4/lab4
+g++ -c Main.cpp Resistor.cpp Resistorlist.cpp Node.cpp Nodelist.cpp Rparser.cpp
+g++ Main.o Resistor.o Resistorlist.o Node.o Nodelist.o Rparser.o -o 
+ ~ece244i/public/exercise 4 a
+
